@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background-color: white !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar-brand {
+  font-size: 1.9rem !important;
+  color: darkslateblue !important;
+  margin-right: 400px;
+}
+
+.navbar a {
+  font-size: 1.3rem;
+  text-transform:capitalize;
+}
+
+.menu_active {
+  font-weight: bold;
+  border-bottom: 1.5px solid darkslateblue;
+}
+
+.navbar a:hover {
+  color: darkblue !important;
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+      font-size: 1.5rem !important;
+      margin-right: 10px;
   }
+  
+  .menu_active {
+      font-weight: bold;   
+      border-bottom: none;
+  }
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* ****************************************** */
+/* # MAIN LANDING SECTION */
+/* ****************************************** */    
+
+#header {
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+}
+
+#header h1 {
+  margin: 0 0 10px 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: black;
+}
+
+#header .brand-name {
+  color: darkblue;
+}
+
+#header h2 {
+  color: darkslategray;
+  font-size: 17px;
+}
+
+#header .btn-get-started {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: darkblue;
+  border: 2px solid darkblue;
+  text-decoration: none;
+}
+
+#header .btn-get-started:hover {
+  background: darkblue;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header-img {
+  text-align: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+      transform: translateY(10px);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+      transform: translateY(-10px);
   }
 }
+
+@keyframes up-down {
+  0% {
+      transform: translateY(10px);
+  }
+  100% {
+      transform: translateY(-10px);
+  }
+}
+
+
+/* ****************************************** */
+/* # CONTACT SECTION */
+/* ****************************************** */  
+
+.contact_div {
+  width: 100%;
+  height: 75vh;
+}
+
+/* ****************************************** */
+/* # FOOTER SECTION */
+/* ****************************************** */  
+
+footer p {
+  padding: 0;
+  margin: 0;
+}
+
+/* ****************************************** */
+/* # RESPONSIVE CODE */
+/* ****************************************** */  
+
+@media (max-width: 991px) {
+  #header {
+      height: 80vh;
+      text-align: center;
+  }
+
+  #header .header-img {
+      text-align: center;
+  }
+
+  #header .header-img img {
+      width: 60%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  #header {
+      margin-top: 20px;
+  }
+
+  #header h1 {
+      font-size: 20px;
+  }
+
+  #header h2 {
+      font-size: 15px;
+      margin-bottom: 30px;
+  }
+
+  #header .header-img img {
+      width: 70%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
